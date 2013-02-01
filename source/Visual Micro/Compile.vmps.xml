@@ -1,0 +1,15 @@
+<VisualMicro>
+  <Program Name="CNCInterface" Ext=".ino" Location="D:\Arduino\CNCInterface">
+    <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\sebastian.stapfer\AppData\Local\VMicro\Arduino\Builds\CNCInterface\mega2560" IncludeDebug="0" IncludesDebug="0" SketchName="CNCInterface" IsCompiled="1" />
+    <Debug StartUpDelayOrDtrEnabled="1" StartUpDelay="0" StartUpMessage="Debug started" LocalPort="COM8" DebugMode="" DebugEnabled="0" />
+    <Platform Name="Arduino">
+      <Board CoreFolder="C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino" Name="mega2560" Description="Arduino Mega 2560 or Mega ADK" VariantFullPath="C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega" bootloader.extended_fuses="0xFD" bootloader.file="stk500boot_v2_mega2560.hex" bootloader.high_fuses="0xD8" bootloader.lock_bits="0x0F" bootloader.low_fuses="0xFF" bootloader.path="stk500v2" bootloader.unlock_bits="0x3F" build.core="arduino" build.f_cpu="16000000L" build.mcu="atmega2560" build.variant="mega" build.variant.vmresolved="C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega" name="Arduino Mega 2560 or Mega ADK" upload.maximum_size="258048" upload.protocol="wiring" upload.speed="115200" />
+    </Platform>
+    <VCCodeModel>
+      <VCCodeMacros>
+        <VCCodeMacro Name="ARDUINO" Value="102" />
+        <VCCodeMacro Name="__AVR_ATmega2560__" />
+      </VCCodeMacros>
+    </VCCodeModel>
+  </Program>
+</VisualMicro>

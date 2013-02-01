@@ -1,0 +1,15 @@
+<head>
+    <title>CNC Uploadcenter</title>
+</head>
+<body>
+  <form id="form1" enctype="multipart/form-data" method="post" action="UploadData.cnc">
+    <div class="row">
+      <label for="fileToUpload">Select a File to Upload</label><br />
+      <input type="file" name="fileToUpload" id="fileToUpload"/>
+    </div>
+    <div class="row">
+      <input type="submit" value="Upload" />
+    </div>
+    <div id="progressNumber"></div>
+  </form>
+</body>
