@@ -25,7 +25,7 @@
 	}
 	return users;
 }*/
-
+/*
 int getUserData()
 {
 	char buf[64];
@@ -71,4 +71,4 @@ int getUserData()
 	Serial.println(PMEM("...done"));
 	free(buf);
 	free(decoded);
-}
+}*/

@@ -43,8 +43,8 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega;C:\Program Files (x86)\Arduino\libraries\SD;C:\Program Files (x86)\Arduino\libraries\SD\utility;C:\Program Files (x86)\Arduino\libraries\SPI;C:\Program Files (x86)\Arduino\libraries\SPI\utility;C:\Program Files (x86)\Arduino\libraries\Ethernet;C:\Program Files (x86)\Arduino\libraries\Ethernet\utility;C:\Program Files (x86)\Arduino\libraries\Webduino;C:\Program Files (x86)\Arduino\libraries\Webduino\utility;C:\Program Files (x86)\Arduino\libraries\Base64;C:\Program Files (x86)\Arduino\libraries\Base64\utility;C:\Program Files (x86)\Arduino\libraries\CNCInterpreter;C:\Program Files (x86)\Arduino\libraries\CNCInterpreter\utility;C:\Program Files (x86)\Arduino\libraries\LCD5110_Basic;C:\Program Files (x86)\Arduino\libraries\LCD5110_Basic\utility;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>D:\Arduino\CNCInterface\Visual Micro\.CNCInterface.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\arduino\cores\arduino;C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega;C:\Program Files (x86)\Arduino\libraries\SD;C:\Program Files (x86)\Arduino\libraries\SD\utility;C:\Program Files (x86)\Arduino\libraries\SPI;C:\Program Files (x86)\Arduino\libraries\SPI\utility;C:\Program Files (x86)\Arduino\libraries\Ethernet;C:\Program Files (x86)\Arduino\libraries\Ethernet\utility;C:\Program Files (x86)\Arduino\libraries\Webduino;C:\Program Files (x86)\Arduino\libraries\Webduino\utility;C:\Program Files (x86)\Arduino\libraries\CNCInterpreter;C:\Program Files (x86)\Arduino\libraries\CNCInterpreter\utility;C:\Program Files (x86)\Arduino\libraries\LCD5110_Basic;C:\Program Files (x86)\Arduino\libraries\LCD5110_Basic\utility;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\;c:\program files (x86)\arduino\hardware\tools\avr\avr\include\avr\;c:\program files (x86)\arduino\hardware\tools\avr\avr\;c:\program files (x86)\arduino\hardware\tools\avr\lib\gcc\avr\4.3.2\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\MAS Thesis\Software\CNCInterface\source\Visual Micro\.source.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>ARDUINO=102;__AVR_ATmega2560__;F_CPU=16000000L;__AVR__;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Visual Micro\.CNCInterface.vsarduino.h" />
+    <ClInclude Include="Visual Micro\.source.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

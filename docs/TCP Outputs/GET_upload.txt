@@ -1,0 +1,508 @@
+No.     Time           Source                Destination           Protocol Length Info
+      4 6.666148000    192.168.0.2           192.168.0.1           TCP      66     49395 > http [SYN] Seq=0 Win=8192 Len=0 MSS=1260 WS=4 SACK_PERM=1
+      5 6.666427000    192.168.0.1           192.168.0.2           TCP      60     http > 49395 [SYN, ACK] Seq=0 Ack=1 Win=2048 Len=0 MSS=1260
+      6 6.666484000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=1 Ack=1 Win=65520 Len=0
+      7 6.667594000    192.168.0.2           192.168.0.1           HTTP     523    GET /upload.htm HTTP/1.1 
+      8 6.770993000    192.168.0.1           192.168.0.2           TCP      86     [TCP segment of a reassembled PDU]
+      9 6.771872000    192.168.0.1           192.168.0.2           TCP      86     [TCP segment of a reassembled PDU]
+     10 6.771907000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=65 Win=65456 Len=0
+     11 6.772254000    192.168.0.1           192.168.0.2           TCP      75     [TCP segment of a reassembled PDU]
+     12 6.772755000    192.168.0.1           192.168.0.2           TCP      78     [TCP segment of a reassembled PDU]
+     13 6.772788000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=110 Win=65411 Len=0
+     14 6.772807000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+     15 6.773133000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+     16 6.773158000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=114 Win=65407 Len=0
+     17 6.822957000    192.168.0.1           192.168.0.2           TCP      67     [TCP segment of a reassembled PDU]
+     18 6.823063000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     19 6.823122000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=128 Win=65393 Len=0
+     20 6.823480000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     21 6.862263000    192.168.0.1           192.168.0.2           TCP      90     [TCP segment of a reassembled PDU]
+     22 6.862350000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=165 Win=65356 Len=0
+     23 6.862377000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     24 6.862692000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     25 6.862719000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=167 Win=65354 Len=0
+     26 6.901303000    192.168.0.1           192.168.0.2           TCP      90     [TCP segment of a reassembled PDU]
+     27 6.901794000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     28 6.901831000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=204 Win=65317 Len=0
+     29 6.901850000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     30 6.936465000    192.168.0.1           192.168.0.2           TCP      86     [TCP segment of a reassembled PDU]
+     31 6.936539000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=237 Win=65284 Len=0
+     32 6.936907000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     33 6.936928000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     34 6.936946000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=239 Win=65282 Len=0
+     35 7.010729000    192.168.0.1           192.168.0.2           TCP      123    [TCP segment of a reassembled PDU]
+     36 7.010805000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     37 7.010847000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=309 Win=65212 Len=0
+     38 7.011193000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     39 7.033297000    192.168.0.1           192.168.0.2           TCP      74     [TCP segment of a reassembled PDU]
+     40 7.033375000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=330 Win=65191 Len=0
+     41 7.033400000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     42 7.033711000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     43 7.033735000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=332 Win=65189 Len=0
+     44 7.064264000    192.168.0.1           192.168.0.2           TCP      82     [TCP segment of a reassembled PDU]
+     45 7.064329000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     46 7.064367000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=361 Win=65160 Len=0
+     47 7.064706000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     48 7.106749000    192.168.0.1           192.168.0.2           TCP      93     [TCP segment of a reassembled PDU]
+     49 7.106823000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=401 Win=65120 Len=0
+     50 7.106845000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     51 7.107157000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     52 7.107181000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=403 Win=65118 Len=0
+     53 7.206937000    192.168.0.1           192.168.0.2           TCP      148    [TCP segment of a reassembled PDU]
+     54 7.207047000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     55 7.207112000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=498 Win=65023 Len=0
+     56 7.207464000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     57 7.224261000    192.168.0.1           192.168.0.2           TCP      69     [TCP segment of a reassembled PDU]
+     58 7.224394000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=514 Win=65007 Len=0
+     59 7.224437000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     60 7.224794000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     61 7.224842000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=516 Win=65005 Len=0
+     62 7.314771000    192.168.0.1           192.168.0.2           TCP      139    [TCP segment of a reassembled PDU]
+     63 7.315190000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     64 7.315266000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=602 Win=64919 Len=0
+     65 7.315299000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     66 7.317310000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+     67 7.317378000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=604 Win=64917 Len=0
+     68 7.317764000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     69 7.317809000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     70 7.317840000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=606 Win=64915 Len=0
+     71 7.404665000    192.168.0.1           192.168.0.2           TCP      134    [TCP segment of a reassembled PDU]
+     72 7.404737000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     73 7.404780000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=687 Win=64834 Len=0
+     74 7.405168000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     75 7.489220000    192.168.0.1           192.168.0.2           TCP      133    [TCP segment of a reassembled PDU]
+     76 7.489312000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=767 Win=64754 Len=0
+     77 7.489341000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     78 7.489653000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     79 7.489685000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=769 Win=64752 Len=0
+     80 7.501001000    192.168.0.1           192.168.0.2           TCP      64     [TCP segment of a reassembled PDU]
+     81 7.501493000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     82 7.501533000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=780 Win=64741 Len=0
+     83 7.501551000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     84 7.510993000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+     85 7.511058000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=789 Win=64732 Len=0
+     86 7.511413000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     87 7.511438000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     88 7.511457000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=791 Win=64730 Len=0
+     89 7.513953000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+     90 7.514000000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     91 7.514026000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=793 Win=64728 Len=0
+     92 7.514345000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     93 7.554345000    192.168.0.1           192.168.0.2           TCP      91     [TCP segment of a reassembled PDU]
+     94 7.554419000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=831 Win=64690 Len=0
+     95 7.554443000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     96 7.554753000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+     97 7.554775000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=833 Win=64688 Len=0
+     98 7.593728000    192.168.0.1           192.168.0.2           TCP      90     [TCP segment of a reassembled PDU]
+     99 7.593840000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    100 7.593905000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=870 Win=64651 Len=0
+    101 7.594271000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    102 7.673065000    192.168.0.1           192.168.0.2           TCP      128    [TCP segment of a reassembled PDU]
+    103 7.673154000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=945 Win=64576 Len=0
+    104 7.673188000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    105 7.673221000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    106 7.673253000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=947 Win=64574 Len=0
+    107 7.776941000    192.168.0.1           192.168.0.2           TCP      152    [TCP segment of a reassembled PDU]
+    108 7.777423000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    109 7.777467000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1046 Win=64475 Len=0
+    110 7.777492000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    111 7.789192000    192.168.0.1           192.168.0.2           TCP      64     [TCP segment of a reassembled PDU]
+    112 7.789279000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1057 Win=64464 Len=0
+    113 7.789670000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    114 7.789724000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    115 7.789756000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1059 Win=64462 Len=0
+    116 7.806363000    192.168.0.1           192.168.0.2           TCP      69     [TCP segment of a reassembled PDU]
+    117 7.806848000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    118 7.806890000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1075 Win=64446 Len=0
+    119 7.806912000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    120 7.898806000    192.168.0.1           192.168.0.2           TCP      139    [TCP segment of a reassembled PDU]
+    121 7.898896000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1161 Win=64360 Len=0
+    122 7.899269000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    123 7.899331000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    124 7.899373000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1163 Win=64358 Len=0
+    125 7.910907000    192.168.0.1           192.168.0.2           TCP      64     [TCP segment of a reassembled PDU]
+    126 7.911351000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    127 7.911395000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1174 Win=64347 Len=0
+    128 7.911417000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    129 7.920858000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    130 7.920943000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1183 Win=64338 Len=0
+    131 7.921329000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    132 7.921378000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    133 7.921410000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1185 Win=64336 Len=0
+    134 7.923493000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    135 7.924178000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    136 7.924258000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1187 Win=64334 Len=0
+    137 7.924289000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    138 7.964066000    192.168.0.1           192.168.0.2           TCP      91     [TCP segment of a reassembled PDU]
+    139 7.964151000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1225 Win=64296 Len=0
+    140 7.964537000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    141 7.964604000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    142 7.964650000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1227 Win=64294 Len=0
+    143 8.041166000    192.168.0.1           192.168.0.2           TCP      126    [TCP segment of a reassembled PDU]
+    144 8.041240000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    145 8.041284000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1300 Win=65520 Len=0
+    146 8.041667000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    147 8.084846000    192.168.0.1           192.168.0.2           TCP      94     [TCP segment of a reassembled PDU]
+    148 8.084933000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1341 Win=65479 Len=0
+    149 8.084965000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    150 8.085291000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    151 8.085351000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1343 Win=65477 Len=0
+    152 8.094519000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    153 8.095011000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    154 8.095056000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1352 Win=65468 Len=0
+    155 8.095079000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    156 8.097173000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    157 8.097234000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1354 Win=65466 Len=0
+    158 8.097614000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    159 8.097666000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    160 8.097697000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1356 Win=65464 Len=0
+    161 8.135489000    192.168.0.1           192.168.0.2           TCP      89     [TCP segment of a reassembled PDU]
+    162 8.135973000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    163 8.136021000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1392 Win=65428 Len=0
+    164 8.136044000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    165 8.208563000    192.168.0.1           192.168.0.2           TCP      122    [TCP segment of a reassembled PDU]
+    166 8.208658000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1461 Win=65359 Len=0
+    167 8.208692000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    168 8.209087000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    169 8.209154000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1463 Win=65357 Len=0
+    170 8.218545000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    171 8.218962000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    172 8.219028000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1472 Win=65348 Len=0
+    173 8.219053000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    174 8.221199000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    175 8.221283000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1474 Win=65346 Len=0
+    176 8.221663000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    177 8.221720000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    178 8.221761000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1476 Win=65344 Len=0
+    179 8.261439000    192.168.0.1           192.168.0.2           TCP      91     [TCP segment of a reassembled PDU]
+    180 8.261927000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    181 8.261967000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1514 Win=65306 Len=0
+    182 8.261991000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    183 8.365790000    192.168.0.1           192.168.0.2           TCP      152    [TCP segment of a reassembled PDU]
+    184 8.365862000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1613 Win=65207 Len=0
+    185 8.366230000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    186 8.366251000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    187 8.366270000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1615 Win=65205 Len=0
+    188 8.376078000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    189 8.376117000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    190 8.376144000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1624 Win=65196 Len=0
+    191 8.376481000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    192 8.392374000    192.168.0.1           192.168.0.2           TCP      68     [TCP segment of a reassembled PDU]
+    193 8.392452000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1639 Win=65181 Len=0
+    194 8.392478000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    195 8.392787000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    196 8.392813000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1641 Win=65179 Len=0
+    197 8.402370000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    198 8.402429000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    199 8.402463000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1650 Win=65170 Len=0
+    200 8.402802000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    201 8.412358000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    202 8.412426000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1659 Win=65161 Len=0
+    203 8.412448000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    204 8.412840000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    205 8.412862000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1661 Win=65159 Len=0
+    206 8.433598000    192.168.0.1           192.168.0.2           TCP      73     [TCP segment of a reassembled PDU]
+    207 8.434071000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    208 8.434137000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1681 Win=65139 Len=0
+    209 8.434174000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    210 8.457892000    192.168.0.1           192.168.0.2           TCP      74     [TCP segment of a reassembled PDU]
+    211 8.458031000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1702 Win=65118 Len=0
+    212 8.458446000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    213 8.458511000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    214 8.458562000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1704 Win=65116 Len=0
+    215 8.465798000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    216 8.466282000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    217 8.466354000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1711 Win=65109 Len=0
+    218 8.466392000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    219 8.478961000    192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    220 8.479098000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1723 Win=65097 Len=0
+    221 8.479497000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    222 8.479544000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    223 8.479585000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1725 Win=65095 Len=0
+    224 8.509913000    192.168.0.1           192.168.0.2           TCP      82     [TCP segment of a reassembled PDU]
+    225 8.510380000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    226 8.510450000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1754 Win=65066 Len=0
+    227 8.510491000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    228 8.517807000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    229 8.517932000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1761 Win=65059 Len=0
+    230 8.518341000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    231 8.518381000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    232 8.518420000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1763 Win=65057 Len=0
+    233 8.535138000    192.168.0.1           192.168.0.2           TCP      69     [TCP segment of a reassembled PDU]
+    234 8.535625000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    235 8.535698000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1779 Win=65041 Len=0
+    236 8.535739000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    237 8.559871000    192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    238 8.560010000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1802 Win=65018 Len=0
+    239 8.560421000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    240 8.560487000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    241 8.560535000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1804 Win=65016 Len=0
+    242 8.585517000    192.168.0.1           192.168.0.2           TCP      77     [TCP segment of a reassembled PDU]
+    243 8.586000000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    244 8.586072000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1828 Win=64992 Len=0
+    245 8.586112000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    246 8.615427000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    247 8.615564000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1856 Win=64964 Len=0
+    248 8.615960000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    249 8.616004000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    250 8.616046000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1858 Win=64962 Len=0
+    251 8.640296000    192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    252 8.640413000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    253 8.640487000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1881 Win=64939 Len=0
+    254 8.640903000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    255 8.668265000    192.168.0.1           192.168.0.2           TCP      79     [TCP segment of a reassembled PDU]
+    256 8.668389000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1907 Win=64913 Len=0
+    257 8.668433000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    258 8.668761000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    259 8.668804000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1909 Win=64911 Len=0
+    260 8.698902000    192.168.0.1           192.168.0.2           TCP      82     [TCP segment of a reassembled PDU]
+    261 8.699388000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    262 8.699460000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1938 Win=64882 Len=0
+    263 8.699500000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    264 8.736153000    192.168.0.1           192.168.0.2           TCP      88     [TCP segment of a reassembled PDU]
+    265 8.736281000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1973 Win=64847 Len=0
+    266 8.736675000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    267 8.736727000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    268 8.736769000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1975 Win=64845 Len=0
+    269 8.744232000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    270 8.744346000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    271 8.744419000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1982 Win=64838 Len=0
+    272 8.744808000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    273 8.757690000    192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    274 8.757831000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1994 Win=64826 Len=0
+    275 8.757885000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    276 8.757941000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    277 8.757997000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=1996 Win=64824 Len=0
+    278 8.782906000    192.168.0.1           192.168.0.2           TCP      77     [TCP segment of a reassembled PDU]
+    279 8.783376000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    280 8.783443000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2020 Win=64800 Len=0
+    281 8.783480000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    282 8.790881000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    283 8.791020000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2027 Win=64793 Len=0
+    284 8.791431000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    285 8.791497000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    286 8.791546000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2029 Win=64791 Len=0
+    287 8.803969000    192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    288 8.804448000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    289 8.804547000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2041 Win=64779 Len=0
+    290 8.804597000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    291 8.828650000    192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    292 8.828891000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2064 Win=64756 Len=0
+    293 8.829285000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    294 8.829330000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    295 8.829371000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2066 Win=64754 Len=0
+    296 8.862764000    192.168.0.1           192.168.0.2           TCP      85     [TCP segment of a reassembled PDU]
+    297 8.863251000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    298 8.863359000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2098 Win=64722 Len=0
+    299 8.863403000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    300 8.902111000    192.168.0.1           192.168.0.2           TCP      90     [TCP segment of a reassembled PDU]
+    301 8.902243000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2135 Win=64685 Len=0
+    302 8.902639000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    303 8.902683000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    304 8.902722000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2137 Win=64683 Len=0
+    305 8.929907000    192.168.0.1           192.168.0.2           TCP      79     [TCP segment of a reassembled PDU]
+    306 8.930387000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    307 8.930436000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2163 Win=64657 Len=0
+    308 8.930461000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    309 8.959815000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    310 8.959894000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2191 Win=64629 Len=0
+    311 8.960268000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    312 8.960310000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    313 8.960341000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2193 Win=64627 Len=0
+    314 8.989871000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    315 8.990300000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    316 8.990381000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2221 Win=64599 Len=0
+    317 8.990414000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    318 9.021514000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    319 9.021602000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2249 Win=64571 Len=0
+    320 9.021989000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    321 9.022063000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    322 9.022108000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2251 Win=64569 Len=0
+    323 9.046192000    192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    324 9.046625000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    325 9.046706000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2274 Win=64546 Len=0
+    326 9.046734000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    327 9.077030000    192.168.0.1           192.168.0.2           TCP      82     [TCP segment of a reassembled PDU]
+    328 9.077117000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2303 Win=64517 Len=0
+    329 9.077501000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    330 9.077547000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    331 9.077577000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2305 Win=64515 Len=0
+    332 9.114231000    192.168.0.1           192.168.0.2           TCP      88     [TCP segment of a reassembled PDU]
+    333 9.114710000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    334 9.114756000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2340 Win=64480 Len=0
+    335 9.114781000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    336 9.153583000    192.168.0.1           192.168.0.2           TCP      90     [TCP segment of a reassembled PDU]
+    337 9.153655000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2377 Win=64443 Len=0
+    338 9.154018000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    339 9.154043000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    340 9.154063000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2379 Win=64441 Len=0
+    341 9.194293000    192.168.0.1           192.168.0.2           TCP      91     [TCP segment of a reassembled PDU]
+    342 9.194354000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    343 9.194390000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2417 Win=64403 Len=0
+    344 9.194735000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    345 9.226295000    192.168.0.1           192.168.0.2           TCP      83     [TCP segment of a reassembled PDU]
+    346 9.226371000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2447 Win=64373 Len=0
+    347 9.226395000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    348 9.226705000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    349 9.226730000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2449 Win=64371 Len=0
+    350 9.256228000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    351 9.256287000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    352 9.256329000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2477 Win=64343 Len=0
+    353 9.256651000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    354 9.310282000    192.168.0.1           192.168.0.2           TCP      104    [TCP segment of a reassembled PDU]
+    355 9.310411000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2528 Win=64292 Len=0
+    356 9.310454000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    357 9.310773000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    358 9.310818000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2530 Win=64290 Len=0
+    359 9.372541000    192.168.0.1           192.168.0.2           TCP      112    [TCP segment of a reassembled PDU]
+    360 9.372611000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    361 9.372655000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2589 Win=65520 Len=0
+    362 9.373041000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    363 9.431953000    192.168.0.1           192.168.0.2           TCP      109    [TCP segment of a reassembled PDU]
+    364 9.432042000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2645 Win=65464 Len=0
+    365 9.432070000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    366 9.432372000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    367 9.432397000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2647 Win=65462 Len=0
+    368 9.488818000    192.168.0.1           192.168.0.2           TCP      107    [TCP segment of a reassembled PDU]
+    369 9.489295000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    370 9.489367000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2701 Win=65408 Len=0
+    371 9.489404000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    372 9.515578000    192.168.0.1           192.168.0.2           TCP      78     [TCP segment of a reassembled PDU]
+    373 9.515708000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2726 Win=65383 Len=0
+    374 9.516102000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    375 9.516147000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    376 9.516190000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2728 Win=65381 Len=0
+    377 9.523661000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    378 9.523780000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    379 9.523853000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2735 Win=65374 Len=0
+    380 9.524276000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    381 9.548143000    192.168.0.1           192.168.0.2           TCP      74     [TCP segment of a reassembled PDU]
+    382 9.548267000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2756 Win=65353 Len=0
+    383 9.548309000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    384 9.548346000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    385 9.548382000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2758 Win=65351 Len=0
+    386 9.571543000    192.168.0.1           192.168.0.2           TCP      75     [TCP segment of a reassembled PDU]
+    387 9.571659000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    388 9.571739000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2780 Win=65329 Len=0
+    389 9.572148000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    390 9.601774000    192.168.0.1           192.168.0.2           TCP      81     [TCP segment of a reassembled PDU]
+    391 9.601914000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2808 Win=65301 Len=0
+    392 9.601966000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    393 9.602021000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    394 9.602076000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2810 Win=65299 Len=0
+    395 9.635382000    192.168.0.1           192.168.0.2           TCP      85     [TCP segment of a reassembled PDU]
+    396 9.635849000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    397 9.635915000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2842 Win=65267 Len=0
+    398 9.635954000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    399 9.666343000    192.168.0.1           192.168.0.2           TCP      82     [TCP segment of a reassembled PDU]
+    400 9.666469000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2871 Win=65238 Len=0
+    401 9.666859000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    402 9.666901000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    403 9.666949000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2873 Win=65236 Len=0
+    404 9.698657000    192.168.0.1           192.168.0.2           TCP      83     [TCP segment of a reassembled PDU]
+    405 9.698785000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    406 9.698864000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2903 Win=65206 Len=0
+    407 9.699287000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    408 9.725405000    192.168.0.1           192.168.0.2           TCP      78     [TCP segment of a reassembled PDU]
+    409 9.725485000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2928 Win=65181 Len=0
+    410 9.725510000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    411 9.725824000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    412 9.725855000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2930 Win=65179 Len=0
+    413 9.748773000    192.168.0.1           192.168.0.2           TCP      75     [TCP segment of a reassembled PDU]
+    414 9.749230000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    415 9.749268000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2952 Win=65157 Len=0
+    416 9.749291000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    417 9.756641000    192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    418 9.756719000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2959 Win=65150 Len=0
+    419 9.757081000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    420 9.757106000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    421 9.757126000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2961 Win=65148 Len=0
+    422 9.768062000    192.168.0.1           192.168.0.2           TCP      63     [TCP segment of a reassembled PDU]
+    423 9.768120000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    424 9.768149000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2971 Win=65138 Len=0
+    425 9.768486000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    426 9.777992000    192.168.0.1           192.168.0.2           TCP      62     [TCP segment of a reassembled PDU]
+    427 9.778071000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2980 Win=65129 Len=0
+    428 9.778092000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    429 9.778405000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    430 9.778432000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=2982 Win=65127 Len=0
+    431 9.805502000    192.168.0.1           192.168.0.2           TCP      79     [TCP segment of a reassembled PDU]
+    432 9.805996000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    433 9.806034000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3008 Win=65101 Len=0
+    434 9.806053000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    435 9.893111000    192.168.0.1           192.168.0.2           TCP      136    [TCP segment of a reassembled PDU]
+    436 9.893236000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3091 Win=65018 Len=0
+    437 9.893629000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    438 9.893672000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    439 9.893710000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3093 Win=65016 Len=0
+    440 9.979790000    192.168.0.1           192.168.0.2           TCP      135    [TCP segment of a reassembled PDU]
+    441 9.979861000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    442 9.979905000    192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3175 Win=64934 Len=0
+    443 9.980289000    192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    444 10.004594000   192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    445 10.004679000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3198 Win=64911 Len=0
+    446 10.004704000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    447 10.005093000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    448 10.005127000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3200 Win=64909 Len=0
+    449 10.064774000   192.168.0.1           192.168.0.2           TCP      110    [TCP segment of a reassembled PDU]
+    450 10.065181000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    451 10.065248000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3257 Win=64852 Len=0
+    452 10.065274000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    453 10.164519000   192.168.0.1           192.168.0.2           TCP      146    [TCP segment of a reassembled PDU]
+    454 10.164608000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3350 Win=64759 Len=0
+    455 10.164639000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    456 10.165027000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    457 10.165092000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3352 Win=64757 Len=0
+    458 10.217314000   192.168.0.1           192.168.0.2           TCP      103    [TCP segment of a reassembled PDU]
+    459 10.217792000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    460 10.217832000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3402 Win=64707 Len=0
+    461 10.217855000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    462 10.230624000   192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    463 10.230714000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3414 Win=64695 Len=0
+    464 10.231105000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    465 10.231158000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    466 10.231191000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3416 Win=64693 Len=0
+    467 10.255293000   192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    468 10.255709000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    469 10.255777000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3439 Win=64670 Len=0
+    470 10.255802000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    471 10.288193000   192.168.0.1           192.168.0.2           TCP      84     [TCP segment of a reassembled PDU]
+    472 10.288277000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3470 Win=64639 Len=0
+    473 10.288651000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    474 10.288689000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    475 10.288719000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3472 Win=64637 Len=0
+    476 10.321241000   192.168.0.1           192.168.0.2           TCP      84     [TCP segment of a reassembled PDU]
+    477 10.321738000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    478 10.321782000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3503 Win=64606 Len=0
+    479 10.321805000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    480 10.334398000   192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    481 10.334491000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3515 Win=64594 Len=0
+    482 10.334882000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    483 10.334935000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    484 10.334968000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3517 Win=64592 Len=0
+    485 10.359057000   192.168.0.1           192.168.0.2           TCP      76     [TCP segment of a reassembled PDU]
+    486 10.359547000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    487 10.359615000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3540 Win=64569 Len=0
+    488 10.359640000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    489 10.400678000   192.168.0.1           192.168.0.2           TCP      92     [TCP segment of a reassembled PDU]
+    490 10.400769000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3579 Win=64530 Len=0
+    491 10.401198000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    492 10.401252000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    493 10.401285000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3581 Win=64528 Len=0
+    494 10.413825000   192.168.0.1           192.168.0.2           TCP      65     [TCP segment of a reassembled PDU]
+    495 10.413897000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    496 10.413941000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3593 Win=64516 Len=0
+    497 10.414325000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    498 10.432520000   192.168.0.1           192.168.0.2           TCP      70     [TCP segment of a reassembled PDU]
+    499 10.432607000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3610 Win=64499 Len=0
+    500 10.432639000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    501 10.432673000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    502 10.432706000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3612 Win=64497 Len=0
+    503 10.448479000   192.168.0.1           192.168.0.2           TCP      68     [TCP segment of a reassembled PDU]
+    504 10.448907000   192.168.0.1           192.168.0.2           TCP      60     [TCP segment of a reassembled PDU]
+    505 10.448988000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3627 Win=64482 Len=0
+    506 10.449022000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    507 10.459015000   192.168.0.1           192.168.0.2           HTTP     60     Continuation or non-HTTP traffic
+    508 10.459098000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [ACK] Seq=470 Ack=3629 Win=64481 Len=0
+    509 10.459369000   192.168.0.2           192.168.0.1           TCP      54     49395 > http [FIN, ACK] Seq=470 Ack=3629 Win=64481 Len=0
+    510 10.459484000   192.168.0.1           192.168.0.2           TCP      60     http > 49395 [ACK] Seq=3629 Ack=471 Win=2048 Len=0

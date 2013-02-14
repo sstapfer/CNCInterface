@@ -1,7 +1,6 @@
 void streamFileToServer(char *filename)
 {
-#if (MEGA_IS_USED > 0)
-	char buf[128];	// buffer too big for Arduino Uno
+	char buf[128];
 	int16_t c;	
 	int16_t index = 0;
 
@@ -23,20 +22,6 @@ void streamFileToServer(char *filename)
 	server.println(buf);
 	datafile.close();
 	delay(10);
-#else
-	int16_t c;	
-
-	server.println("<html>");
-	datafile = SD.open(filename, FILE_READ);
-	delay(10);
-	while((c=datafile.read()) > 0) {	// read file until EOF
-		server.print((char)c);
-		delay(1);
-	}
-	server.print("</html>");
-	datafile.close();
-	delay(10);
-#endif
 	free(buf);
 }
 
@@ -50,7 +35,7 @@ bool streamDataToFile()
 	char *ptr_filename = tmpFilename;
 
 #if WEBDUINO_SERIAL_DEBUGGING > 0
-	Serial.println("----------Header------------");
+	Serial.println(PMEM("----------Header------------"));
 #endif
 	// remove header
 	server.readHeader(databuffer,80);
@@ -80,7 +65,7 @@ bool streamDataToFile()
 		server.read();
 	}
 #if WEBDUINO_SERIAL_DEBUGGING > 0
-	Serial.println("----------Params------------");
+	Serial.println(PMEM("----------Params------------"));
 #endif
 
 	while((ch = server.read()) != -1)
@@ -104,23 +89,38 @@ bool streamDataToFile()
 			if(line==1) {
 				if(SD.exists(filename))
 				{
-					Serial.println("WARNING: file already used!");
-					Serial.println("Remove existing file?");
+					Serial.println(PMEM("WARNING: file already used!"));
+					Serial.println(PMEM("Remove existing file?"));
+					Serial.println(PMEM("Ok = Remove file, Down = Leave file"));
 					lcd.clrScr();
 					lcd.print("Datei ersetzen?",CENTER,0);
-					server.println(PMEM("<p>ACHTUNG: Datei schon vorhanden! Zum ersetzen OK drücken.</p>"));
+					lcd.print("Ok = Ja",CENTER,8);
 					while(!buttonOK)
 					{
+#if LOCAL_DEBUG == 1
+				//		--- OK button simulation ---
+						char btnRead;
+						btnRead = CNCPort.read();
+						if(btnRead=='o')
+						{
+							buttonOK=true;
+						}
+						if(btnRead=='l')
+						{
+							buttonDOWN=true;
+						}
+#endif
 						if(buttonDOWN)
 						{
 							buttonDOWN=false;
 							Serial.println("File NOT removed.");
+							server.println("Datei nicht ersetzt.<br />");
 							return false;
 						}
 					}
 					buttonOK=false;
 					SD.remove(filename);
-					Serial.println("Saving new file.");
+					Serial.println("Saving new file...");
 					lcd.print("Wird gespeichert...",CENTER,8);
 					datafile = SD.open(filename, FILE_WRITE);
 					delay(10);
@@ -145,7 +145,7 @@ bool streamDataToFile()
 	}
 	if(line>0) {
 #if WEBDUINO_SERIAL_DEBUGGING > 0
-		Serial.println("File closed.");
+		Serial.println(PMEM("File closed."));
 #endif
 		datafile.close();
 		delay(10);
@@ -157,10 +157,13 @@ bool streamDataToFile()
 
 void streamDataToCNC(char *filename)
 {
-	char buf[100];	// buffer too big for Arduino Uno
+	char buf[80];	// buffer of 80 bytes too big for Arduino Uno
+	char lcdTmpBuffer[12];
 	int16_t c;
 	int16_t index = 0;
+	long lineNumber = 0;
 	char firstStreamChar;
+	char *translatedString = NULL;
 
 	if(CNCcurrentState == READY)
 	{
@@ -175,23 +178,27 @@ void streamDataToCNC(char *filename)
 		while(c=datafile.read() > 0)
 		{
 			buf[index++] = (char)(c+77);	// problem in uploaded file?
-			while((c=datafile.read()) != 10) {	// read file until line feed
+			while(((c=datafile.read())!=10) && (c!=13)) {	// read file until LF or CRLF (Windows)
 				buf[index++] = (char)c;
 			}
 			buf[index] = '\0';
 			Serial.println(buf);
 			Serial.println(PMEM("------------"));
-			firstStreamChar=*cnc.translate(buf);
-			if(firstStreamChar=='@')
+			translatedString = cnc.translate(buf);
+			if(translatedString[0]=='@')
 			{
-				Serial.println(cnc.translate(buf));
-				CNCPort.println(cnc.translate(buf));
+				Serial.println(translatedString);
+				CNCPort.println(translatedString);
+#if LOCAL_DEBUG == 1
+#else
+				lcd.print("Line Nr.:",0,CENTER);
+				lcd.print(ltoa(lineNumber++,lcdTmpBuffer,10),8,CENTER);
 				waitForCNC();
+#endif
 				CNCnextState = PROCESSING;
 			}
 			index = 0;
 		}
-		buf[index] = '\0';
 		datafile.close();
 		delay(10);
 		orderComplete = true;
@@ -202,8 +209,6 @@ void printDirectory(File dir, int numTabs) {
    while(true) {
      File entry =  dir.openNextFile();
      if (! entry) {
-       // no more files
-       //Serial.println("**nomorefiles**");
        break;
      }
      for (uint8_t i=0; i<numTabs; i++) {
@@ -231,8 +236,7 @@ int getFileList()
    while(true) {
      File entry =  dir.openNextFile();
      if (! entry) {
-		// no more files
-		//Serial.println("**nomorefiles**");
+//		Serial.println("**nomorefiles**");
 		entry.close();
 		dir.close();
 		return numFiles;
@@ -247,7 +251,7 @@ int getFileList()
 		}
 		else
 		{
-			Serial.println("**too much files**");
+			Serial.println(PMEM("**zu viele Dateien**"));
 			entry.close();
 			dir.close();
 			return 9;

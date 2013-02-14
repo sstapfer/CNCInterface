@@ -16,6 +16,7 @@ void lcdMenuTop(byte index)
 {
 	switch (index)
 	{
+	lcd.clrScr();
 	case 1:
 		lcd.print("=> CNC Daten",LEFT,0);
 		lcd.print("   Setup",LEFT,8);
@@ -77,7 +78,7 @@ void processUserInterface()
 		if(buttonOK)
 		{
 				Serial.print("> ");
-				Serial.println(fileList[actualfile]);
+				Serial.println(fileList[actualFile]);
 				CNCnextState = XY_ZERO;
 				buttonOK=false;
 				menulayer=0;
@@ -85,17 +86,17 @@ void processUserInterface()
 		}
 		if(buttonDOWN)
 		{
-			if(actualfile>(numFiles-2))
+			if(actualFile>(numFiles-2))
 			{
-				actualfile = 0;
+				actualFile = 0;
 			}
 			else
 			{
-				actualfile++;
+				actualFile++;
 			}
-		Serial.println(fileList[actualfile]);
+		Serial.println(fileList[actualFile]);
 		lcd.clrScr();
-		fileList[actualfile].toCharArray(buf,80);
+		fileList[actualFile].toCharArray(buf,80);
 		lcd.print(buf,LEFT,0);
 		buttonDOWN=false;
 		delay(1000);

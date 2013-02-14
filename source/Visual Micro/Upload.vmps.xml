@@ -1,5 +1,5 @@
 <VisualMicro>
-  <Program Name="CNCInterface" Ext=".ino" Location="D:\Arduino\CNCInterface">
+  <Program Name="CNCInterface" Ext=".ino" Location="D:\MAS Thesis\Software\CNCInterface\source">
     <Compile CompilerErrors="0" ConfigurationName="Debug" StopOnError="False" OptimiseLibs="True" OptimiseCore="True" BuildPath="C:\Users\sebastian.stapfer\AppData\Local\VMicro\Arduino\Builds\CNCInterface\mega2560" IncludeDebug="0" IncludesDebug="0" SketchName="CNCInterface" IsCompiled="1" />
     <Debug StartUpDelayOrDtrEnabled="1" StartUpDelay="0" StartUpMessage="Debug started" LocalPort="COM8" DebugMode="" DebugEnabled="0" />
     <Platform Name="Arduino">
@@ -7,6 +7,7 @@
     </Platform>
     <VCCodeModel>
       <VCCodeMacros>
+        <VCCodeMacro Name="ARDUINO" Value="102" />
         <VCCodeMacro Name="ARDUINO" Value="102" />
         <VCCodeMacro Name="__AVR_ATmega2560__" />
       </VCCodeMacros>
