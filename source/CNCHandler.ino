@@ -27,7 +27,7 @@ void moveZAxis()
 {
 	CNCPort.println("@0n3");// set x- and y-Axis 0 on actual position
 	waitForCNC();
-	CNCPort.println("@0M5000,5000,5000,5000,-26000,5000,0,1000");// prepare for PCB touch
+	CNCPort.println("@0M-1000,5000,5000,5000,-26000,5000,0,1000");// prepare for PCB touch
 }
 
 /** this function moves the drilling head down, until it touches the PCB. The new position is saved as Z = 0.\n
