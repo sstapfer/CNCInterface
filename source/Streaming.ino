@@ -1,3 +1,10 @@
+/** @file Streaming.ino
+	@brief These functions are used to stream data from the SD card to the webserver and the CNC and from the webserver
+	to the SD Card.*/
+
+/** @brief this function streams the specified file from the SD card to the webserver. Used to display HTML pages
+	saved on SD card.
+	@param filename Name of the file to stream*/
 void streamFileToServer(char *filename)
 {
 	char buf[128];
@@ -25,6 +32,7 @@ void streamFileToServer(char *filename)
 	free(buf);
 }
 
+/** @brief this function streams data from a user selected file to the SD card using the upload dialog.*/
 bool streamDataToFile()
 {
 	int ch=0, line=0;
@@ -41,7 +49,7 @@ bool streamDataToFile()
 	server.readHeader(databuffer,80);
 	server.readHeader(databuffer,80);
 
-	/** get Filename */
+	/* get Filename */
 	ptr_databuffer = strstr(databuffer,"filename=");
 	ptr_databuffer += 10;
 	while(*ptr_databuffer != '.')
@@ -155,6 +163,8 @@ bool streamDataToFile()
 	return true;
 }
 
+/** @brief this function streams data on the SD card to the USART1 port
+	@param filename Name of file to stream from SD card to the USART1 port*/
 void streamDataToCNC(char *filename)
 {
 	char buf[80];	// buffer of 80 bytes too big for Arduino Uno
@@ -205,7 +215,8 @@ void streamDataToCNC(char *filename)
 	}
 }
 
-void printDirectory(File dir, int numTabs) {
+
+/*void printDirectory(File dir, int numTabs) {
    while(true) {
      File entry =  dir.openNextFile();
      if (! entry) {
@@ -225,8 +236,9 @@ void printDirectory(File dir, int numTabs) {
      }
    }
    datafile.close();
-}
+}*/
 
+/** @brief this function saves the filenames in the data directory in the fileList an prints the first 6 on the lcd screen.*/
 int getFileList()
 {
 	int numFiles = 0;

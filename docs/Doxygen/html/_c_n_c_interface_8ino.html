@@ -204,6 +204,97 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
 <dl class="section author"><dt>Author:</dt><dd>S. Stapfer</dd></dl>
 <dl class="section version"><dt>Version:</dt><dd>0.9 </dd></dl>
 </div><hr/><h2>Function Documentation</h2>
+<a class="anchor" id="a8373b6775f224fbef31c06c5ea115773"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WebServer server </td>
+          <td>(</td>
+          <td class="paramtype">PREFIX&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">80&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This object is the webserver. Function calls can be made by "server.function()". </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PREFIX</td><td></td></tr>
+    <tr><td class="paramname">Port</td><td>Port of the webserver. Usually 80 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae5c9f3714a16448bd453233d9c301afa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LCD5110 lcd </td>
+          <td>(</td>
+          <td class="paramtype">7&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">6&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">5&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">3&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">8&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This object is used to display strings on an attached LC Display (Nokia 5110). Communication is made over the SPI bus. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">SCK</td><td>Clock pin </td></tr>
+    <tr><td class="paramname">MOSI</td><td>Master out Slave in pin </td></tr>
+    <tr><td class="paramname">DC</td><td>Data or Command mode </td></tr>
+    <tr><td class="paramname">RST</td><td>Reset pin </td></tr>
+    <tr><td class="paramname">CS</td><td>Client select pin </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="a33f47f7a56fbb4f0d86bd5036002eae5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -241,55 +332,6 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
 </div><div class="memdoc">
 
 <p>This displayIndexHTML function is called if a user request the /index.htm file. It reads the content of a index.htm file on the SD-Card and send it to the client. </p>
-<dl class="params"><dt>Parameters:</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">server</td><td>Pointer to the server object </td></tr>
-    <tr><td class="paramname">type</td><td>Type of connection (INVALID, GET, HEAD, POST, PUT, DELETE or PATCH) </td></tr>
-    <tr><td class="paramname">url_tail</td><td>Rest of the URL, that doesn't fit in the given pattern </td></tr>
-    <tr><td class="paramname">tail_complete</td><td>True, if the complete URL fit in url_tail buffer, false if not </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="af4f94536b200cf600ea553bfb6b3f6e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void displayLogoutHTML </td>
-          <td>(</td>
-          <td class="paramtype">WebServer &amp;&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">WebServer::ConnectionType&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>url_tail</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>tail_complete</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This displayLogoutHTML function is called if the users clicks on the logout button after an upload. </p>
 <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
     <tr><td class="paramname">server</td><td>Pointer to the server object </td></tr>
@@ -351,39 +393,33 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
 
 </div>
 </div>
-<a class="anchor" id="ae5c9f3714a16448bd453233d9c301afa"></a>
+<a class="anchor" id="a6ab3866008f887c900e59b452631a48d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LCD5110 lcd </td>
+          <td class="memname">void processDataUpload </td>
           <td>(</td>
-          <td class="paramtype">7&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype">WebServer &amp;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">6&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype">WebServer::ConnectionType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">5&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>url_tail</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">3&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">8&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tail_complete</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -393,14 +429,62 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
       </table>
 </div><div class="memdoc">
 
-<p>This object is used to display strings on an attached LC Display (Nokia 5110). Communication is made over the SPI bus. </p>
+<p>This processDataUpload function is called from the upload.htm form. It starts the upload of data to the SD-Card. </p>
 <dl class="params"><dt>Parameters:</dt><dd>
   <table class="params">
-    <tr><td class="paramname">SCK</td><td>Clock pin </td></tr>
-    <tr><td class="paramname">MOSI</td><td>Master out Slave in pin </td></tr>
-    <tr><td class="paramname">DC</td><td></td></tr>
-    <tr><td class="paramname">RST</td><td>Reset pin </td></tr>
-    <tr><td class="paramname">CS</td><td>Client select pin </td></tr>
+    <tr><td class="paramname">server</td><td>Pointer to the server object </td></tr>
+    <tr><td class="paramname">type</td><td>Type of connection (INVALID, GET, HEAD, POST, PUT, DELETE or PATCH) </td></tr>
+    <tr><td class="paramname">url_tail</td><td>Rest of the URL, that doesn't fit in the given pattern </td></tr>
+    <tr><td class="paramname">tail_complete</td><td>True, if the complete URL fit in url_tail buffer, false if not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4f94536b200cf600ea553bfb6b3f6e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void displayLogoutHTML </td>
+          <td>(</td>
+          <td class="paramtype">WebServer &amp;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WebServer::ConnectionType&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>url_tail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>tail_complete</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This displayLogoutHTML function is called if the users clicks on the logout button after an upload. </p>
+<dl class="params"><dt>Parameters:</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">server</td><td>Pointer to the server object </td></tr>
+    <tr><td class="paramname">type</td><td>Type of connection (INVALID, GET, HEAD, POST, PUT, DELETE or PATCH) </td></tr>
+    <tr><td class="paramname">url_tail</td><td>Rest of the URL, that doesn't fit in the given pattern </td></tr>
+    <tr><td class="paramname">tail_complete</td><td>True, if the complete URL fit in url_tail buffer, false if not </td></tr>
   </table>
   </dd>
 </dl>
@@ -453,90 +537,6 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
 
 </div>
 </div>
-<a class="anchor" id="a6ab3866008f887c900e59b452631a48d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void processDataUpload </td>
-          <td>(</td>
-          <td class="paramtype">WebServer &amp;&#160;</td>
-          <td class="paramname"><em>server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">WebServer::ConnectionType&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>url_tail</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>tail_complete</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This processDataUpload function is called from the upload.htm form. It starts the upload of data to the SD-Card. </p>
-<dl class="params"><dt>Parameters:</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">server</td><td>Pointer to the server object </td></tr>
-    <tr><td class="paramname">type</td><td>Type of connection (INVALID, GET, HEAD, POST, PUT, DELETE or PATCH) </td></tr>
-    <tr><td class="paramname">url_tail</td><td>Rest of the URL, that doesn't fit in the given pattern </td></tr>
-    <tr><td class="paramname">tail_complete</td><td>True, if the complete URL fit in url_tail buffer, false if not </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a8373b6775f224fbef31c06c5ea115773"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">WebServer server </td>
-          <td>(</td>
-          <td class="paramtype">PREFIX&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">80&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This object is the webserver. Function calls can be made by "server.function()". </p>
-<dl class="params"><dt>Parameters:</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">PREFIX</td><td></td></tr>
-    <tr><td class="paramname">Port</td><td>Port of the webserver. Usually 80 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/><h2>Variable Documentation</h2>
 <a class="anchor" id="a5a05dbbdadb25aa91e63ea51a8a2ec14"></a>
 <div class="memitem">
@@ -561,7 +561,7 @@ File&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_n
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2013 17:07:32 for CNC Prototyper by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 26 2013 16:50:48 for CNC Prototyper by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

@@ -1,0 +1,60 @@
+\hypertarget{_u_i_8ino}{\section{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-U\-I.ino File Reference}
+\label{_u_i_8ino}\index{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-U\-I.\-ino@{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-U\-I.\-ino}}
+}
+
+
+These functions are used to build a user interface logic and to process user input.  
+
+
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries indexlcdmenu\-\_\-t} \{ {\bfseries L\-I\-S\-T\-F\-I\-L\-E\-S} = 1, 
+{\bfseries S\-E\-T\-U\-P}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_u_i_8ino_a703998b64c9a3b68ee3c47f5a9fe3631}{void \hyperlink{_u_i_8ino_a703998b64c9a3b68ee3c47f5a9fe3631}{ok\-Pressed} ()}\label{_u_i_8ino_a703998b64c9a3b68ee3c47f5a9fe3631}
+
+\begin{DoxyCompactList}\small\item\em this is the small interrupt routine for the ok button. \end{DoxyCompactList}\item 
+\hypertarget{_u_i_8ino_ac3465cb35ba356dc7b25316ebecf6418}{void \hyperlink{_u_i_8ino_ac3465cb35ba356dc7b25316ebecf6418}{down\-Pressed} ()}\label{_u_i_8ino_ac3465cb35ba356dc7b25316ebecf6418}
+
+\begin{DoxyCompactList}\small\item\em this is the small interrupt routine for the down button. \end{DoxyCompactList}\item 
+void \hyperlink{_u_i_8ino_a47414a10985cd7bb4080431fc73920a9}{lcd\-Menu\-Top} (byte index)
+\begin{DoxyCompactList}\small\item\em this function displays the user menu on top layer. \end{DoxyCompactList}\item 
+\hypertarget{_u_i_8ino_a2a62b0a8356a6b15d85e3dcba1af98bf}{void \hyperlink{_u_i_8ino_a2a62b0a8356a6b15d85e3dcba1af98bf}{process\-User\-Interface} ()}\label{_u_i_8ino_a2a62b0a8356a6b15d85e3dcba1af98bf}
+
+\begin{DoxyCompactList}\small\item\em this function processes the user input logic \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_u_i_8ino_a0e626bf32368f9c8a901b7e0bcc0f9e8}{int {\bfseries menulayer} = 0}\label{_u_i_8ino_a0e626bf32368f9c8a901b7e0bcc0f9e8}
+
+\item 
+\hypertarget{_u_i_8ino_a78b2f5d80992f00e787d9263496a344f}{int {\bfseries index\-L\-C\-D\-Menu} = 1}\label{_u_i_8ino_a78b2f5d80992f00e787d9263496a344f}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to build a user interface logic and to process user input. 
+
+\subsection{Function Documentation}
+\hypertarget{_u_i_8ino_a47414a10985cd7bb4080431fc73920a9}{\index{U\-I.\-ino@{U\-I.\-ino}!lcd\-Menu\-Top@{lcd\-Menu\-Top}}
+\index{lcd\-Menu\-Top@{lcd\-Menu\-Top}!UI.ino@{U\-I.\-ino}}
+\subsubsection[{lcd\-Menu\-Top}]{\setlength{\rightskip}{0pt plus 5cm}void lcd\-Menu\-Top (
+\begin{DoxyParamCaption}
+\item[{byte}]{index}
+\end{DoxyParamCaption}
+)}}\label{_u_i_8ino_a47414a10985cd7bb4080431fc73920a9}
+
+
+this function displays the user menu on top layer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & This is the current cursor position \\
+\hline
+\end{DoxyParams}

@@ -6,7 +6,7 @@
 
 	@author S. Stapfer
 
-	@version 0.9
+	@version 1.0
 
 */
 
@@ -72,7 +72,7 @@ CNCInterpreter cnc;
 	over the SPI bus.
 	@param SCK Clock pin
 	@param MOSI Master out Slave in pin
-	@param DC
+	@param DC Data or Command mode
 	@param RST Reset pin
 	@param CS Client select pin*/
 LCD5110 lcd(7,6,5,3,8);

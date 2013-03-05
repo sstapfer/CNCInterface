@@ -37,7 +37,6 @@ void moveToolAway();
 void streamFileToServer(char *filename);
 bool streamDataToFile();
 void streamDataToCNC(char *filename);
-void printDirectory(File dir, int numTabs);
 int getFileList();
 void okPressed();
 void downPressed();

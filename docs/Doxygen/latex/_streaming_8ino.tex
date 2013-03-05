@@ -1,0 +1,59 @@
+\hypertarget{_streaming_8ino}{\section{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-Streaming.ino File Reference}
+\label{_streaming_8ino}\index{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-Streaming.\-ino@{D\-:/\-M\-A\-S Thesis/\-Software/\-C\-N\-C\-Interface/source/\-Streaming.\-ino}}
+}
+
+
+These functions are used to stream data from the S\-D card to the webserver and the C\-N\-C and from the webserver to the S\-D Card.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_streaming_8ino_a42680af0c326ceca0505e652c7184653}{stream\-File\-To\-Server} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em this function streams the specified file from the S\-D card to the webserver. Used to display H\-T\-M\-L pages saved on S\-D card. \end{DoxyCompactList}\item 
+\hypertarget{_streaming_8ino_a17d101103aa11e97fc8ffcb5d3dad9e9}{bool \hyperlink{_streaming_8ino_a17d101103aa11e97fc8ffcb5d3dad9e9}{stream\-Data\-To\-File} ()}\label{_streaming_8ino_a17d101103aa11e97fc8ffcb5d3dad9e9}
+
+\begin{DoxyCompactList}\small\item\em this function streams data from a user selected file to the S\-D card using the upload dialog. \end{DoxyCompactList}\item 
+void \hyperlink{_streaming_8ino_a466dd01de4cf8bd7bbc6f9320d076e70}{stream\-Data\-To\-C\-N\-C} (char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em this function streams data on the S\-D card to the U\-S\-A\-R\-T1 port \end{DoxyCompactList}\item 
+\hypertarget{_streaming_8ino_a843c9fb1d19ac7830ad2c77d75025185}{int \hyperlink{_streaming_8ino_a843c9fb1d19ac7830ad2c77d75025185}{get\-File\-List} ()}\label{_streaming_8ino_a843c9fb1d19ac7830ad2c77d75025185}
+
+\begin{DoxyCompactList}\small\item\em this function saves the filenames in the data directory in the file\-List an prints the first 6 on the lcd screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These functions are used to stream data from the S\-D card to the webserver and the C\-N\-C and from the webserver to the S\-D Card. 
+
+\subsection{Function Documentation}
+\hypertarget{_streaming_8ino_a42680af0c326ceca0505e652c7184653}{\index{Streaming.\-ino@{Streaming.\-ino}!stream\-File\-To\-Server@{stream\-File\-To\-Server}}
+\index{stream\-File\-To\-Server@{stream\-File\-To\-Server}!Streaming.ino@{Streaming.\-ino}}
+\subsubsection[{stream\-File\-To\-Server}]{\setlength{\rightskip}{0pt plus 5cm}void stream\-File\-To\-Server (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{_streaming_8ino_a42680af0c326ceca0505e652c7184653}
+
+
+this function streams the specified file from the S\-D card to the webserver. Used to display H\-T\-M\-L pages saved on S\-D card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file to stream \\
+\hline
+\end{DoxyParams}
+\hypertarget{_streaming_8ino_a466dd01de4cf8bd7bbc6f9320d076e70}{\index{Streaming.\-ino@{Streaming.\-ino}!stream\-Data\-To\-C\-N\-C@{stream\-Data\-To\-C\-N\-C}}
+\index{stream\-Data\-To\-C\-N\-C@{stream\-Data\-To\-C\-N\-C}!Streaming.ino@{Streaming.\-ino}}
+\subsubsection[{stream\-Data\-To\-C\-N\-C}]{\setlength{\rightskip}{0pt plus 5cm}void stream\-Data\-To\-C\-N\-C (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{_streaming_8ino_a466dd01de4cf8bd7bbc6f9320d076e70}
+
+
+this function streams data on the S\-D card to the U\-S\-A\-R\-T1 port 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of file to stream from S\-D card to the U\-S\-A\-R\-T1 port \\
+\hline
+\end{DoxyParams}

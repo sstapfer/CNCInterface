@@ -1,17 +1,25 @@
+/** @file UI.ino
+	@brief These functions are used to build a user interface logic and to process user input.*/
+
 int menulayer = 0;
+
 enum indexlcdmenu_t {LISTFILES=1,SETUP};
 int indexLCDMenu=1;
 
+/** @brief this is the small interrupt routine for the ok button.*/
 void okPressed()
 {
 	buttonOK=true;
 }
 
+/** @brief this is the small interrupt routine for the down button.*/
 void downPressed()
 {
 	buttonDOWN=true;
 }
 
+/** @brief this function displays the user menu on top layer.
+	@param index This is the current cursor position*/
 void lcdMenuTop(byte index)
 {
 	switch (index)
@@ -31,6 +39,7 @@ void lcdMenuTop(byte index)
 	}
 }
 
+/** @brief this function processes the user input logic*/
 void processUserInterface()
 {
 	char *buf = p_buffer;

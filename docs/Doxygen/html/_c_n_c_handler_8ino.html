@@ -129,35 +129,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a4e3279aebe89073ad717a448bf1fc92a"></a>
+<a class="anchor" id="a1ae414981c96a56ddfd54a15094fc6ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void moveToolAway </td>
+          <td class="memname">void setXYAxesZero </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>this function moves the table in front to the user and the drilling head up. </p>
-
-</div>
-</div>
-<a class="anchor" id="a324bc74f2517b05957ef08a87b5bc91d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void moveToStartPos </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>this function moves away the head at about 100mm above PCB </p>
+<p>this function changes the X and Y origin of the coordinate system to the corner in front on the left side </p>
 
 </div>
 </div>
@@ -174,39 +158,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>this function moves the drilling head 10 mm above the PCB surface and 25mm in X and Y direction </p>
-
-</div>
-</div>
-<a class="anchor" id="a425b90c142a01f19bfc4f9ab569a2e46"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sendCNC </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>this function is called to send the next order to the CNC machine. If there is no new line the order is<br/>
- completed and the state changes to Done. </p>
-
-</div>
-</div>
-<a class="anchor" id="a1ae414981c96a56ddfd54a15094fc6ea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void setXYAxesZero </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>this function changes the X and Y origin of the coordinate system to the corner in front on the left side </p>
 
 </div>
 </div>
@@ -227,10 +178,59 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a324bc74f2517b05957ef08a87b5bc91d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveToStartPos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>this function moves away the head at about 100mm above PCB </p>
+
+</div>
+</div>
+<a class="anchor" id="a425b90c142a01f19bfc4f9ab569a2e46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sendCNC </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>this function is called to send the next order to the CNC machine. If there is no new line the order is<br/>
+ completed and the state changes to Done. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4e3279aebe89073ad717a448bf1fc92a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moveToolAway </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>this function moves the table in front to the user and the drilling head up. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 14 2013 17:07:32 for CNC Prototyper by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 26 2013 16:50:48 for CNC Prototyper by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

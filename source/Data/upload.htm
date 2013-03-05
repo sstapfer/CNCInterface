@@ -5,14 +5,21 @@
         var file = document.getElementById('fileToUpload').files[0];
         if (file) {
           var fileSize = 0;
-          if (file.size > 1024 * 1024)
-            fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
-          else
-            fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+          if (file.size > 1024 * 48) {
+              fileSize = 'Datei zu gross, bitte auf SD-Karte kopieren';
+              document.getElementById('submitButton').disabled = true;
+              document.getElementById('submitButton').style.backgroundColor = "#b9b9b9";
+              document.getElementById('submitButton').style.cursor = "default";
+          }
+          else {
+              fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+              document.getElementById('submitButton').disabled = false;
+              document.getElementById('submitButton').style.backgroundColor = "white";
+              document.getElementById('submitButton').style.cursor = "pointer";
+          }
 
           document.getElementById('fileName').innerHTML = 'Name: ' + file.name;
           document.getElementById('fileSize').innerHTML = 'Size: ' + fileSize;
-          document.getElementById('fileType').innerHTML = 'Type: ' + file.type;
         }
       }
 
@@ -39,19 +46,72 @@
         alert("The upload has been canceled by the user or the browser dropped the connection.");
       }
     </script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        text-align: center;
+    }
+    #wrapper {
+        width: 480px;
+        height: 200px;
+        margin: 40px auto;
+        padding:20px;
+        text-align:left;
+        border-radius:10px;
+        background-color:#b9b9b9;
+    }
+    .row {
+        padding: 10px;
+    }
+    .key {
+        color: black;
+        display: inline-block;
+        padding: 2px 10px 3px 10px;
+        font-size: 25px;
+        line-height: 30px;
+        text-shadow: none;
+        letter-spacing: 0;
+        bottom: 10px;
+        position: relative;
+        -moz-border-radius: 10px;
+        -khtml-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+        -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+        -o-box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+        cursor:pointer;
+    }
+    #submitbutton {
+        color:black;
+        background: white;
+        display: inline-block;
+        padding: 30px 20px;
+        border-radius: 10px;
+        cursor:pointer;
+        float:right;
+    }
+</style>
 </head>
-<body>
-  <form id="form1" enctype="multipart/form-data" method="post" action="UploadData.cnc">
+<body><div id="wrapper">
+  <form id="form1" enctype="multipart/form-data" method="post" action="done.htm">
+      <a id="left-init-key" href="index.htm"><span class="key">&larr;</span></a>
     <div class="row">
-      <label for="fileToUpload">Select a File to Upload</label><br />
-      <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();"/>
+      <label for="fileToUpload">CNC Datei</label><br />
+      <input id="fileToUpload" type="file" name="fileToUpload" onchange="fileSelected();"/>
+    <button id="submitButton">Hochladen</button>
     </div>
+    <div class="row">
     <div id="fileName"></div>
     <div id="fileSize"></div>
-    <div id="fileType"></div>
-    <div class="row">
-      <input type="submit" value="Upload" />
     </div>
-    <div id="progressNumber"></div>
-  </form>
-</body><html>
+    <div class="row">
+      <div id="progressNumber"></div>
+    </div>
+  </form></div>
+</body></html>

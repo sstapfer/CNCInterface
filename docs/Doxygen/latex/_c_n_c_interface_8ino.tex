@@ -143,6 +143,53 @@ S. Stapfer
 
 
 \subsection{Function Documentation}
+\hypertarget{_c_n_c_interface_8ino_a8373b6775f224fbef31c06c5ea115773}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!server@{server}}
+\index{server@{server}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}Web\-Server server (
+\begin{DoxyParamCaption}
+\item[{P\-R\-E\-F\-I\-X}]{, }
+\item[{80}]{}
+\end{DoxyParamCaption}
+)}}\label{_c_n_c_interface_8ino_a8373b6775f224fbef31c06c5ea115773}
+
+
+This object is the webserver. Function calls can be made by \char`\"{}server.\-function()\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em P\-R\-E\-F\-I\-X} & \\
+\hline
+{\em Port} & Port of the webserver. Usually 80 \\
+\hline
+\end{DoxyParams}
+\hypertarget{_c_n_c_interface_8ino_ae5c9f3714a16448bd453233d9c301afa}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!lcd@{lcd}}
+\index{lcd@{lcd}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
+\subsubsection[{lcd}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-D5110 lcd (
+\begin{DoxyParamCaption}
+\item[{7}]{, }
+\item[{6}]{, }
+\item[{5}]{, }
+\item[{3}]{, }
+\item[{8}]{}
+\end{DoxyParamCaption}
+)}}\label{_c_n_c_interface_8ino_ae5c9f3714a16448bd453233d9c301afa}
+
+
+This object is used to display strings on an attached L\-C Display (Nokia 5110). Communication is made over the S\-P\-I bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\-C\-K} & Clock pin \\
+\hline
+{\em M\-O\-S\-I} & Master out Slave in pin \\
+\hline
+{\em D\-C} & Data or Command mode \\
+\hline
+{\em R\-S\-T} & Reset pin \\
+\hline
+{\em C\-S} & Client select pin \\
+\hline
+\end{DoxyParams}
 \hypertarget{_c_n_c_interface_8ino_a33f47f7a56fbb4f0d86bd5036002eae5}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!display\-Index\-H\-T\-M\-L@{display\-Index\-H\-T\-M\-L}}
 \index{display\-Index\-H\-T\-M\-L@{display\-Index\-H\-T\-M\-L}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
 \subsubsection[{display\-Index\-H\-T\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}void display\-Index\-H\-T\-M\-L (
@@ -156,31 +203,6 @@ S. Stapfer
 
 
 This display\-Index\-H\-T\-M\-L function is called if a user request the /index.htm file. It reads the content of a index.\-htm file on the S\-D-\/\-Card and send it to the client. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em server} & Pointer to the server object \\
-\hline
-{\em type} & Type of connection (I\-N\-V\-A\-L\-I\-D, G\-E\-T, H\-E\-A\-D, P\-O\-S\-T, P\-U\-T, D\-E\-L\-E\-T\-E or P\-A\-T\-C\-H) \\
-\hline
-{\em url\-\_\-tail} & Rest of the U\-R\-L, that doesn't fit in the given pattern \\
-\hline
-{\em tail\-\_\-complete} & True, if the complete U\-R\-L fit in url\-\_\-tail buffer, false if not \\
-\hline
-\end{DoxyParams}
-\hypertarget{_c_n_c_interface_8ino_af4f94536b200cf600ea553bfb6b3f6e5}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!display\-Logout\-H\-T\-M\-L@{display\-Logout\-H\-T\-M\-L}}
-\index{display\-Logout\-H\-T\-M\-L@{display\-Logout\-H\-T\-M\-L}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
-\subsubsection[{display\-Logout\-H\-T\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}void display\-Logout\-H\-T\-M\-L (
-\begin{DoxyParamCaption}
-\item[{Web\-Server \&}]{server, }
-\item[{Web\-Server\-::\-Connection\-Type}]{type, }
-\item[{char $\ast$}]{url\-\_\-tail, }
-\item[{bool}]{tail\-\_\-complete}
-\end{DoxyParamCaption}
-)}}\label{_c_n_c_interface_8ino_af4f94536b200cf600ea553bfb6b3f6e5}
-
-
-This display\-Logout\-H\-T\-M\-L function is called if the users clicks on the logout button after an upload. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -218,32 +240,54 @@ This display\-Upload\-Form function is called from the index.\-htm site or if a 
 {\em tail\-\_\-complete} & True, if the complete U\-R\-L fit in url\-\_\-tail buffer, false if not \\
 \hline
 \end{DoxyParams}
-\hypertarget{_c_n_c_interface_8ino_ae5c9f3714a16448bd453233d9c301afa}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!lcd@{lcd}}
-\index{lcd@{lcd}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
-\subsubsection[{lcd}]{\setlength{\rightskip}{0pt plus 5cm}L\-C\-D5110 lcd (
+\hypertarget{_c_n_c_interface_8ino_a6ab3866008f887c900e59b452631a48d}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!process\-Data\-Upload@{process\-Data\-Upload}}
+\index{process\-Data\-Upload@{process\-Data\-Upload}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
+\subsubsection[{process\-Data\-Upload}]{\setlength{\rightskip}{0pt plus 5cm}void process\-Data\-Upload (
 \begin{DoxyParamCaption}
-\item[{7}]{, }
-\item[{6}]{, }
-\item[{5}]{, }
-\item[{3}]{, }
-\item[{8}]{}
+\item[{Web\-Server \&}]{server, }
+\item[{Web\-Server\-::\-Connection\-Type}]{type, }
+\item[{char $\ast$}]{url\-\_\-tail, }
+\item[{bool}]{tail\-\_\-complete}
 \end{DoxyParamCaption}
-)}}\label{_c_n_c_interface_8ino_ae5c9f3714a16448bd453233d9c301afa}
+)}}\label{_c_n_c_interface_8ino_a6ab3866008f887c900e59b452631a48d}
 
 
-This object is used to display strings on an attached L\-C Display (Nokia 5110). Communication is made over the S\-P\-I bus. 
+This process\-Data\-Upload function is called from the upload.\-htm form. It starts the upload of data to the S\-D-\/\-Card. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em S\-C\-K} & Clock pin \\
+{\em server} & Pointer to the server object \\
 \hline
-{\em M\-O\-S\-I} & Master out Slave in pin \\
+{\em type} & Type of connection (I\-N\-V\-A\-L\-I\-D, G\-E\-T, H\-E\-A\-D, P\-O\-S\-T, P\-U\-T, D\-E\-L\-E\-T\-E or P\-A\-T\-C\-H) \\
 \hline
-{\em D\-C} & \\
+{\em url\-\_\-tail} & Rest of the U\-R\-L, that doesn't fit in the given pattern \\
 \hline
-{\em R\-S\-T} & Reset pin \\
+{\em tail\-\_\-complete} & True, if the complete U\-R\-L fit in url\-\_\-tail buffer, false if not \\
 \hline
-{\em C\-S} & Client select pin \\
+\end{DoxyParams}
+\hypertarget{_c_n_c_interface_8ino_af4f94536b200cf600ea553bfb6b3f6e5}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!display\-Logout\-H\-T\-M\-L@{display\-Logout\-H\-T\-M\-L}}
+\index{display\-Logout\-H\-T\-M\-L@{display\-Logout\-H\-T\-M\-L}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
+\subsubsection[{display\-Logout\-H\-T\-M\-L}]{\setlength{\rightskip}{0pt plus 5cm}void display\-Logout\-H\-T\-M\-L (
+\begin{DoxyParamCaption}
+\item[{Web\-Server \&}]{server, }
+\item[{Web\-Server\-::\-Connection\-Type}]{type, }
+\item[{char $\ast$}]{url\-\_\-tail, }
+\item[{bool}]{tail\-\_\-complete}
+\end{DoxyParamCaption}
+)}}\label{_c_n_c_interface_8ino_af4f94536b200cf600ea553bfb6b3f6e5}
+
+
+This display\-Logout\-H\-T\-M\-L function is called if the users clicks on the logout button after an upload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & Pointer to the server object \\
+\hline
+{\em type} & Type of connection (I\-N\-V\-A\-L\-I\-D, G\-E\-T, H\-E\-A\-D, P\-O\-S\-T, P\-U\-T, D\-E\-L\-E\-T\-E or P\-A\-T\-C\-H) \\
+\hline
+{\em url\-\_\-tail} & Rest of the U\-R\-L, that doesn't fit in the given pattern \\
+\hline
+{\em tail\-\_\-complete} & True, if the complete U\-R\-L fit in url\-\_\-tail buffer, false if not \\
 \hline
 \end{DoxyParams}
 \hypertarget{_c_n_c_interface_8ino_afe461d27b9c48d5921c00d521181f12f}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!loop@{loop}}
@@ -284,51 +328,7 @@ Basically it does 3 things\-:
 
 \item Done\-: Move the milling tool away and display done to the user\par
  
-\end{DoxyItemize}\hypertarget{_c_n_c_interface_8ino_a6ab3866008f887c900e59b452631a48d}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!process\-Data\-Upload@{process\-Data\-Upload}}
-\index{process\-Data\-Upload@{process\-Data\-Upload}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
-\subsubsection[{process\-Data\-Upload}]{\setlength{\rightskip}{0pt plus 5cm}void process\-Data\-Upload (
-\begin{DoxyParamCaption}
-\item[{Web\-Server \&}]{server, }
-\item[{Web\-Server\-::\-Connection\-Type}]{type, }
-\item[{char $\ast$}]{url\-\_\-tail, }
-\item[{bool}]{tail\-\_\-complete}
-\end{DoxyParamCaption}
-)}}\label{_c_n_c_interface_8ino_a6ab3866008f887c900e59b452631a48d}
-
-
-This process\-Data\-Upload function is called from the upload.\-htm form. It starts the upload of data to the S\-D-\/\-Card. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em server} & Pointer to the server object \\
-\hline
-{\em type} & Type of connection (I\-N\-V\-A\-L\-I\-D, G\-E\-T, H\-E\-A\-D, P\-O\-S\-T, P\-U\-T, D\-E\-L\-E\-T\-E or P\-A\-T\-C\-H) \\
-\hline
-{\em url\-\_\-tail} & Rest of the U\-R\-L, that doesn't fit in the given pattern \\
-\hline
-{\em tail\-\_\-complete} & True, if the complete U\-R\-L fit in url\-\_\-tail buffer, false if not \\
-\hline
-\end{DoxyParams}
-\hypertarget{_c_n_c_interface_8ino_a8373b6775f224fbef31c06c5ea115773}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!server@{server}}
-\index{server@{server}!CNCInterface.ino@{C\-N\-C\-Interface.\-ino}}
-\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}Web\-Server server (
-\begin{DoxyParamCaption}
-\item[{P\-R\-E\-F\-I\-X}]{, }
-\item[{80}]{}
-\end{DoxyParamCaption}
-)}}\label{_c_n_c_interface_8ino_a8373b6775f224fbef31c06c5ea115773}
-
-
-This object is the webserver. Function calls can be made by \char`\"{}server.\-function()\char`\"{}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em P\-R\-E\-F\-I\-X} & \\
-\hline
-{\em Port} & Port of the webserver. Usually 80 \\
-\hline
-\end{DoxyParams}
-
+\end{DoxyItemize}
 
 \subsection{Variable Documentation}
 \hypertarget{_c_n_c_interface_8ino_a5a05dbbdadb25aa91e63ea51a8a2ec14}{\index{C\-N\-C\-Interface.\-ino@{C\-N\-C\-Interface.\-ino}!file\-List@{file\-List}}
