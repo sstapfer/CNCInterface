@@ -38,9 +38,11 @@ void streamFileToServer(char *filename);
 bool streamDataToFile();
 void streamDataToCNC(char *filename);
 int getFileList();
+void removeDataFiles();
 void okPressed();
 void downPressed();
 void lcdMenuTop(byte index);
+void lcdConfigMenu(byte index);
 void processUserInterface();
 
 #include "C:\Program Files (x86)\Arduino\hardware\arduino\variants\mega\pins_arduino.h" 

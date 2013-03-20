@@ -238,7 +238,7 @@ void streamDataToCNC(char *filename)
    datafile.close();
 }*/
 
-/** @brief this function saves the filenames in the data directory in the fileList an prints the first 6 on the lcd screen.*/
+/** @brief this function saves the filenames in the data directory in the fileList and returns the number of files.*/
 int getFileList()
 {
 	int numFiles = 0;
@@ -248,7 +248,7 @@ int getFileList()
    while(true) {
      File entry =  dir.openNextFile();
      if (! entry) {
-//		Serial.println("**nomorefiles**");
+		Serial.println("**nomorefiles**");
 		entry.close();
 		dir.close();
 		return numFiles;
@@ -257,7 +257,6 @@ int getFileList()
 		if(numFiles < 10)
 		{
 			Serial.println(entry.name());
-			lcd.print(entry.name(),LEFT,numFiles*8);
 			fileList[numFiles] = entry.name();
 			numFiles++;
 		}
@@ -270,4 +269,29 @@ int getFileList()
 		}
 	 }
    }
+}
+
+/** @brief this function removes all data files on the sd-card.*/
+void removeDataFiles() {
+	char filename[24] = "data/";
+
+	Serial.println("Removing Datafiles...");
+	File dir = SD.open("data/");
+
+	while(true) {
+		File entry = dir.openNextFile();
+		if(!entry) {
+			Serial.println("**nomorefiles**");
+			entry.close();
+			dir.close();
+			return;
+		}
+		if(!entry.isDirectory()) {
+			strcat(filename,entry.name());
+			Serial.print("Remove file: ");
+			Serial.println(filename);
+			SD.remove(filename);
+			strcpy(filename,"data/");
+		}
+	}
 }

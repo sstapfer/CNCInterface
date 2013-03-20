@@ -6,7 +6,7 @@
 
 	@author S. Stapfer
 
-	@version 1.0
+	@version 1.1
 
 */
 
@@ -326,7 +326,6 @@ void setup()
 	server.addCommand("logout.htm",&displayLogoutHTML);
 	server.begin();
 	lcd.print("Serveraddress:",LEFT,8);
-//	lcd.print(PMEM("10.202.2.24"),LEFT,16);
 	lcd.print(myIP,LEFT,16);
 	Serial.print(PMEM("Serveradress: "));
 	Serial.println(myIP);
@@ -349,7 +348,7 @@ void setup()
 	3. Switching to the new state*/
 void loop()
 {
-	char buff[512];	//64 / 128
+	char buff[512];
 	int len = 512;
 
 	/* process incoming connections one at a time forever */
